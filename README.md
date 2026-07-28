@@ -6,3 +6,7 @@ Things to note: if something were to fail on local and it responds a 4xx on the 
 The HTTP status that you see on the terminal is the true value that will be in Github recent deliveries when we test this whole workflow from dev/staging/ production environment. 
 
 We need to still evaluate if there is a way to send the response from local back to smee and in turn back to Github. However, this is not a priority item since we have most of the infra & setup ready based on the above steps that will enable us with local development, debugging & testing.
+
+acs@BD-MB30008 ~ % smee -u https://smee.io/95a8296b-b1b4-4210-835e-135f8bcb5787 -t http://127.0.0.1:8080/webhooks/github_standard/95a8296b-b1b4-4210-835e-135f8bcb5787
+Connected to https://smee.io/95a8296b-b1b4-4210-835e-135f8bcb5787
+Forwarding https://smee.io/95a8296b-b1b4-4210-835e-135f8bcb5787 to http://127.0.0.1:8080/webhooks/github_standard/95a8296b-b1b4-4210-835e-135f8bcb5787
